@@ -22,6 +22,18 @@ Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For cla
 
 ## Skills
 
+### `linkedin-ghostwriting`
+
+Drafting an executive's LinkedIn posts and comments, without breaching LinkedIn's account rules or producing the content it now demotes.
+
+Two facts shape it, and most advice on executive LinkedIn ignores both.
+
+**Ghostwriting is allowed. Account access is not.** Nothing in LinkedIn's rules requires anyone to compose their own posts, but signing in as your principal breaches the User Agreement outright (§2.2, §8.2), and plenty of assistants do it. Personal profiles have no delegation model the way Company Pages do. The skill gives three compliant workflows instead, including the one official route: OAuth with the `w_member_social` scope, which the executive authorises themselves and can revoke.
+
+**Substance is now a ranking factor and LinkedIn says so in writing.** Since 2026 it names "AI slop" as a demoted category, with a reader-facing report button and a warning that surfaces in the author's own analytics. The ghostwriter's failure mode has inverted: it used to be sounding wrong, and now it is sounding fine and saying nothing. So the skill treats the job as extraction rather than composition, with three methods for getting a real point of view out of a principal, and an instruction to say there is nothing to post this week when there isn't.
+
+The reference file separates durable facts (limits, policy, the delegation route) from perishable ones (ranking behaviour), grades every claim by source, and debunks the folklore. The link-penalty belief is unproven in both directions; the real documented constraint is that a post carries a link preview or an image, not both.
+
 ### `executive-voice`
 
 Builds a voice profile of a principal from their real writing, so anything drafted in their name sounds like them.
