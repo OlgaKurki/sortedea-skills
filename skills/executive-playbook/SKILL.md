@@ -1,9 +1,11 @@
 ---
 name: executive-playbook
-description: Build, maintain and use an Executive Playbook — the structured record of how a principal (executive, chairman, founder, partner) works, travels, communicates and decides. Use this whenever an assistant is starting with a new principal, onboarding into an EA/PA/Chief of Staff role, capturing what they already know about their executive into something reusable, or asking "how does he like his meetings / flights / updates". Also use it BEFORE drafting on a principal's behalf, prepping their travel, or triaging their diary — those tasks should read the playbook first rather than guessing. Trigger on "executive playbook", "principal profile", "new boss", "new principal", "exec preferences", "how does she like", "onboarding as an EA", and any request to record or apply an executive's working preferences.
+description: Build and maintain an Executive Playbook — how a principal works, travels, communicates and decides. Use before drafting, booking travel or making diary decisions on their behalf.
 ---
 
 # Executive Playbook
+
+**Use this skill when** an assistant is starting with a new principal, onboarding into an EA/PA/Chief of Staff role, capturing what they already know about their executive into something reusable, or asking how their principal likes their meetings, flights or updates. Also use it *before* drafting on a principal's behalf, prepping their travel, or triaging their diary — those tasks should read the playbook rather than guess. Phrases that mean this skill: "executive playbook", "principal profile", "new boss", "new principal", "exec preferences", "how does she like", "onboarding as an EA".
 
 An Executive Playbook is the operating manual for one principal. It is the difference between an assistant who asks the same question three times and one who already knows the answer — and it is the substrate every other assistant skill should read from before it drafts, books, or schedules anything.
 
