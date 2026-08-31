@@ -22,6 +22,21 @@ Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For cla
 
 ## Skills
 
+### `sound-human`
+
+Rewrites assistant and executive writing so it stops reading as AI, without stripping out the formality a document actually needs.
+
+Most de-AI advice is written for blog posts: use contractions, cut the formality, write punchy. Applied to a board minute or a decline to an investor, that produces something worse than the AI draft. So this one starts from a register map instead of a voice. Formality is not the tell. Formula is.
+
+It covers the tells that show up in support writing specifically, which are not the ones in marketing AI-speak: "I hope this email finds you well", stacked hedges, reflexive apology for chasing, "at your earliest convenience", manufactured consensus in minutes. Plus em dashes, digits, and sentence rhythm.
+
+Two rules it holds harder than the style guide:
+
+- **Nothing factual moves during a style pass.** No number, name, date, deadline, decision or commitment changes, and nothing is added that was not in the source. Making a draft warmer must not make it promise more.
+- **Warmth is not an AI tell.** The common failure is stripping every courtesy and producing something curt, which for an assistant is a professional risk. Cut formulaic warmth ("hope you're well"), keep specific warmth ("hope Lisbon went well").
+
+Ships with 6 worked before/afters: declining a meeting, chasing a signature, an internal announcement, a briefing note, minutes, and a travel confirmation. The minutes example shows the over-correction failure as well as the original.
+
 ### `meeting-minutes`
 
 Turns a transcript or rough notes into circulation-ready minutes: numbered decisions, a four-column action table with named owners, and an honest list of what it could not work out.
