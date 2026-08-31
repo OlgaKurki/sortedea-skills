@@ -26,10 +26,10 @@ Evidence is not equal. Weight it:
 | Handwritten notes, messages, Slack | High | Fast writing shows defaults |
 | Interview and podcast transcripts | High | Their vocabulary and sentence shapes, though speech runs looser than writing |
 | Talks and presentations they wrote | Medium | Prepared, so more considered than they normally are |
-| LinkedIn posts | **Low. Check first** | Frequently written by comms teams or agencies |
-| Press quotes and official statements | **Lowest** | Usually written by someone in PR |
 
-**Before you use a single LinkedIn post, establish whether they write them.** If comms does, you would be capturing an agency house style and calling it your principal. Ask. If the answer is "I sketch it and marketing tidies it up", treat those posts as low weight and lean on email instead.
+**Leave out anything that passed through someone else.** LinkedIn posts, press quotes, official statements, bylined articles and award submissions are frequently written or heavily edited by comms teams, agencies and PR. Feed those into a voice profile and you capture an agency house style and label it your principal. You usually cannot tell by reading, which is why the rule is exclusion rather than caution. You have better sources.
+
+If your principal genuinely writes their own posts and you want to work on their presence, that is a separate job with separate rules. See the `linkedin-ghostwriting` skill.
 
 Get range across four axes, because executives write very differently along each: internal against external, to seniors against to their own team, good news against bad, and considered against fired off from a phone. A corpus of 30 friendly internal emails teaches you nothing about how they decline.
 
@@ -78,6 +78,14 @@ Unlabelled means light preference.
 **The edit test, better and slower.** Send them a draft. Watch what they change. If they only change facts and content, the voice works. If they rewrite phrasing, every rewrite is a rule you missed. Log it.
 
 Keep logging edits after the profile is done. Corrections are the highest quality evidence there is, and they arrive free, forever.
+
+## Step 7. Save it as a skill
+
+A profile sitting in a folder gets read once. A profile installed as a skill gets used every time anyone drafts in that person's name, which is the point of building it.
+
+`references/save-as-a-skill.md` covers turning the finished profile into an installable skill: what to put in the instructions against what to leave in the reference files, the naming convention when you support more than one principal, how to package and install it, and how to keep it current.
+
+**Read the privacy section of that file before you package anything.** A voice skill is a file about a named real person, built from their correspondence. It is not shareable material, and it must never reach a public repository or an organisation-wide skill directory.
 
 ## Privacy
 

@@ -8,18 +8,20 @@ Do not run this as an interrogation. Most of it can be picked up in ordinary con
 
 ## For the principal, if you can get 15 minutes
 
-1. Do you write your own LinkedIn posts, or does someone help? *Ask this first. It decides whether a third of your corpus is usable.*
-2. Is there anything you would never put in an email, and always pick up the phone for instead?
-3. What do you not want to sound like?
-4. Is there a word or phrase you dislike seeing in something signed by you?
-5. When I have drafted for you before, what have you found yourself changing?
-6. Who do you write differently for, and how?
-7. When you say no to someone, do you want a reason given, or is a clean no better?
-8. Are there topics you will not comment on publicly, at all?
-9. How do you want to sound when something has gone wrong?
-10. What may I send in your name without checking, and what must always come to you first?
+1. Is there anything you would never put in an email, and always pick up the phone for instead?
+2. What do you not want to sound like?
+3. Is there a word or phrase you dislike seeing in something signed by you?
+4. When I have drafted for you before, what have you found yourself changing?
+5. Who do you write differently for, and how?
+6. When you say no to someone, do you want a reason given, or is a clean no better?
+7. Are there topics you will not put in writing at all?
+8. How do you want to sound when something has gone wrong?
+9. What may I send in your name without checking, and what must always come to you first?
+10. Of the things published under your name, which did you actually write yourself?
 
-Question 5 is the most valuable and the one people answer least well in the abstract. If they struggle, show them two of your old drafts next to what they sent instead, and ask what they changed and why. The answer to that is worth more than the other nine.
+Question 4 is the most valuable and the one people answer least well in the abstract. If they struggle, show them two of your old drafts next to what they sent instead, and ask what they changed and why. The answer to that is worth more than the other nine.
+
+Question 10 exists to keep bylined articles, press quotes and posts out of the corpus unless they are genuinely theirs. The honest answer is often "comms drafted it and I changed two words".
 
 ## For you, from observation
 

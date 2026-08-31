@@ -40,13 +40,16 @@ Builds a voice profile of a principal from their real writing, so anything draft
 
 Runs the opposite way round from the usual voice-capture interview. Your principal will not sit through 100 questions about their punctuation, and people describe their own writing badly. So the corpus is the source of truth and the assistant is the source of context: read 25 to 40 real pieces, measure them, then answer roughly 20 questions about what writing cannot reveal.
 
-Three things it insists on:
+Four things it insists on:
 
-- **Weight the evidence.** Sent emails and their edits to your drafts are the highest grade. LinkedIn posts are the lowest, because comms teams write a great many of them, and capturing that voice means capturing an agency house style and calling it your principal. Establish which before you use a single one.
+- **Exclude anything that passed through someone else.** LinkedIn posts, press quotes, bylined articles, official statements. Comms teams and agencies write a great many of them, you usually cannot tell by reading, and one contaminated source teaches the wrong voice. The rule is exclusion, not caution.
 - **Count, don't sense.** You will believe they write short sentences and find the mean is 24 words. Absence is the strongest evidence of all: no exclamation mark in 40 emails is a harder rule than anything you could be told.
 - **Tell them you're doing it.** Building a model of how someone writes from their private correspondence is not a thing to do quietly, and they will improve it in five minutes anyway.
+- **Turn the finished profile into a skill.** A profile in a folder gets read once. Installed as a skill, it applies itself every time anyone drafts in that person's name. The guide covers what belongs in the instructions against the reference files, naming when you support more than one principal, packaging, and the corrections loop that keeps it current.
 
-Ships with an extraction checklist, the gap questions, and a profile template with a "what I got wrong" log, because every draft that comes back edited for voice is a rule you missed.
+Ships with an extraction checklist, the gap questions, a profile template with a "what I got wrong" log, and the save-as-a-skill guide.
+
+**A voice skill is never shareable.** It describes a named real person and is built from their correspondence. It does not go to a public repo, an organisation-wide skill directory, or the next assistant without the principal agreeing again. The repo's `.gitignore` blocks the obvious filenames, but that is a safety net, not permission.
 
 ### `sound-human`
 
