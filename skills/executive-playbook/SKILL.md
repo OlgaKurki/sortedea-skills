@@ -1,6 +1,6 @@
 ---
 name: executive-playbook
-description: Build and maintain an Executive Playbook — how a principal works, travels, communicates and decides. Use before drafting, booking travel or making diary decisions on their behalf.
+description: Build and maintain an Executive Playbook — how a principal works, travels, communicates and decides. Use before drafting, booking travel or making diary decisions on their behalf; when starting with a new boss or new principal; when onboarding as an EA, PA or Chief of Staff; or when capturing exec preferences you already carry in your head.
 ---
 
 # Executive Playbook
