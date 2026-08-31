@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+
+# Never commit a filled-in playbook — these contain real people's details
+playbook.md
+playbook-private.md
+principals/
+*-playbook.md
+!skills/**/assets/*template*.md
