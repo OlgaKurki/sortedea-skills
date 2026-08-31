@@ -22,6 +22,18 @@ Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For cla
 
 ## Skills
 
+### `linkedin-ghostwriting`
+
+Drafting a principal's LinkedIn posts and comments without breaching LinkedIn's account rules or producing the low-substance content it now demotes.
+
+Two facts shape it, and most executive-LinkedIn advice ignores both.
+
+**Ghostwriting is allowed. Account access is not.** Nothing in LinkedIn's rules requires anyone to compose their own posts — but signing in as your principal breaches the User Agreement outright, and a great many assistants do it. Company Pages have a proper admin model; personal profiles have no assistant seat at all. The skill gives three workflows that aren't a breach, including the official OAuth route compliant schedulers use, and the sentence to say when a principal offers you their password.
+
+**Substance is now a ranking factor, and LinkedIn says so in writing.** The platform names "AI slop" as a category it demotes, with a member-facing report button. So the ghostwriter's failure mode has inverted: it used to be sounding wrong, and now it's sounding fine and saying nothing. The skill treats the work as extraction rather than composition — the voice note, the meeting harvest, the disagreement — and tells you to spike the post when there's nothing there. If you can't find a specific claim, a number, a named example or a real opinion, don't write it.
+
+`references/platform-facts.md` separates what lasts (character limits, policy clauses) from what goes stale (ranking behaviour), marks each claim official or third-party, and dates them. It ends with a Folklore section for the advice repeated most confidently on the least evidence — optimal posting times, the golden hour, broetry, emoji penalties. The "links reduce reach" claim is filed as unproven in both directions rather than quietly picked.
+
 ### `sound-human`
 
 Rewrites assistant and executive writing so it stops reading as AI, without stripping out the formality a document actually needs.
