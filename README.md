@@ -9,13 +9,13 @@ Most "AI for assistants" tooling is either a sales CRM with the labels changed, 
 ## Install
 
 ```bash
-npx skills add sortedea/skills
+npx skills add OlgaKurki/sortedea-skills
 ```
 
 Or a single skill:
 
 ```bash
-npx skills add https://github.com/sortedea/skills/tree/main/skills/executive-playbook
+npx skills add https://github.com/OlgaKurki/sortedea-skills/tree/main/skills/executive-playbook
 ```
 
 Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For claude.ai, zip the skill folder and upload it under Settings → Capabilities → Skills.
