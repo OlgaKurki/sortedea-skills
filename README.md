@@ -22,6 +22,14 @@ Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For cla
 
 ## Skills
 
+### `meeting-minutes`
+
+Turns a transcript or rough notes into circulation-ready minutes: numbered decisions, a four-column action table with named owners, and an honest list of what it could not work out.
+
+Built around one principle — a draft that flags its own gaps saves more time than a draft that quietly fills them in. It will not invent an owner, guess a deadline, or attribute words to someone the source doesn't clearly show said them. Disagreements stay recorded as disagreements.
+
+It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
+
 ### `executive-playbook`
 
 The operating manual for one principal — how they work, travel, communicate and decide. Builds it by interview, keeps it current as preferences change, and serves it to every other task so drafting, travel and diary decisions start from fact instead of guesswork.
@@ -60,7 +68,6 @@ skills/executive-playbook/
 
 Gaps found in a survey of the existing skills landscape — nothing credible covers these yet:
 
-- **`meeting-minutes`** — formal minutes and action capture *(next)*
 - **`board-pack`** — the pack as an artefact: agenda, consent items, pre-reads, version control, distribution
 - **`trip-file`** — corporate travel, not holiday planning. Confirmation numbers, visas, disruption handling
 - **`relationship-map`** — a principal's network, tended rather than pipelined
