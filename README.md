@@ -108,6 +108,10 @@ skills/executive-playbook/
 ```
 </details>
 
+## The guide
+
+**[Save it as a skill](guide/Save-it-as-a-skill.pdf)** (PDF, 14 pages) covers what to do once one of these skills has produced a document about your principal: how to package a playbook, a voice profile or a set of LinkedIn house rules as an installable skill, what belongs in the instructions against the reference files, and the privacy rules that come with a file describing a named person.
+
 ## Roadmap
 
 Gaps found in a survey of the existing skills landscape — nothing credible covers these yet:
