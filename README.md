@@ -74,6 +74,14 @@ Built around one principle — a draft that flags its own gaps saves more time t
 
 It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
 
+### `save-as-skill`
+
+Packages a finished playbook, voice profile or LinkedIn house rules into an installable skill and hands back a zip.
+
+The other three produce a document. This one turns it into something that runs. It reads the document, asks one question (what to call it), validates the name against the rules that break silently, strips out what must not travel, builds the folder and reference files, zips it, and tells you what it left out.
+
+That last part is the point of it being a skill rather than a checklist. The private annex is usually sitting in the same conversation as the playbook, so an unguarded packaging step would sweep it straight into a file that then gets uploaded and shared. This one is built to exclude it and to show you the exclusion list.
+
 ### `executive-playbook`
 
 The operating manual for one principal — how they work, travel, communicate and decide. Builds it by interview, keeps it current as preferences change, and serves it to every other task so drafting, travel and diary decisions start from fact instead of guesswork.
@@ -110,7 +118,7 @@ skills/executive-playbook/
 
 ## The guide
 
-**[Save it as a skill](guide/Save-it-as-a-skill.pdf)** (PDF, 14 pages) covers what to do once one of these skills has produced a document about your principal: how to package a playbook, a voice profile or a set of LinkedIn house rules as an installable skill, what belongs in the instructions against the reference files, and the privacy rules that come with a file describing a named person.
+**[Save it as a skill](guide/Save-it-as-a-skill.pdf)** (PDF, 6 pages) is the short version for people who just want the thing working: run a skill, say "save as skill", upload the zip. It also carries the standalone prompt for anyone who has not installed `save-as-skill`, and the privacy rules that come with a file describing a named person.
 
 ## Roadmap
 
