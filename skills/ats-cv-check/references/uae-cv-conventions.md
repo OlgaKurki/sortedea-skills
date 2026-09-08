@@ -48,3 +48,19 @@ MOHRE classifies occupations into nine skill levels. Levels one to three require
 **Attestation is a post-offer process, not a screening step**, so it does not belong as a CV section. If a degree is already attested or equivalency is obtained, one line in the covering note is defensible because it removes a known delay from the employer's onboarding. No source recommends this. Present it as reasoning, not as practice.
 
 Cite the live u.ae and Ministry of Education pages if the person needs the process itself. The search results for attestation are dominated by agencies selling the service.
+
+
+---
+
+## Sources
+
+- [Bayt, CV format for UAE jobs](https://www.bayt.com/en/blog/32538/cv-format-for-uae-jobs-the-complete-2026-guide/). Regional job board, so read the photograph advice with that in mind
+- [Michael Page UAE, how to write a great CV](https://www.michaelpage.ae/advice/career-advice/cover-letter-and-cv-advice/how-write-great-cv). International recruiter, and the source that disagrees with Bayt on photographs
+- [GulfTalent CV Search employer guide](https://www.gulftalent.com/employers/guides/cv-search). Documents nationality as an employer search filter
+- [Chambers, UAE labour laws and discrimination](https://chambers.com/articles/uae-labour-laws-safeguarding-employees-from-discrimination). Federal Decree-Law 33 of 2021, Article 4, and its application to recruitment
+- [Gulf News on MOHRE skill levels](https://gulfnews.com/living-in-uae/ask-us/uae-mohre-skill-levels-explained-how-they-affect-jobs-visas-and-salaries-1.500666331). The nine-level classification and attestation
+- RTL extraction bugs: [PyMuPDF #2199](https://github.com/pymupdf/PyMuPDF/issues/2199), [docling #1938](https://github.com/docling-project/docling/issues/1938), [markitdown #2336](https://github.com/microsoft/markitdown/issues/2336)
+
+For attestation itself, cite the live [u.ae](https://u.ae/) and Ministry of Education pages rather than the agency sites that dominate search for that term.
+
+Checked September 2026.

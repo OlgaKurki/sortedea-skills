@@ -13,11 +13,11 @@ Most ATS advice is written for the American market and tells you to fear Workday
 
 Before the first check, say this plainly, because it changes what the person should spend their effort on:
 
-**A parsing failure does not reject you.** Greenhouse documents that when a CV fails to parse, the recruiter enters the details by hand and the CV stays attached to your profile. Bad formatting creates friction and a worse first impression. It is not a trapdoor.
+**A parsing failure does not reject you.** [Greenhouse documents](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) that when a CV fails to parse, the recruiter enters the details by hand and the CV stays attached to your profile. Bad formatting creates friction and a worse first impression. It is not a trapdoor.
 
-**The "75% of CVs are rejected by ATS" figure is a myth.** It traces to Preptel, a CV-optimisation vendor, in 2012. Preptel shut down in 2013 and never published a study behind the number. Anyone quoting it is quoting a sales pitch.
+**The "75% of CVs are rejected by ATS" figure is a myth.** It traces to Preptel, a CV-optimisation vendor, in 2012. Preptel shut down in 2013 and never published a study behind the number ([provenance](https://jobcannon.io/research/stats/ats-myth-preptel)). Anyone quoting it is quoting a sales pitch.
 
-**What genuinely filters people out is the employer's own criteria**, not your font. Harvard Business School and Accenture surveyed 2,275 executives and found 88% agreed qualified candidates were screened out for not matching the exact criteria in the job description. That is years of experience, a specific degree, an unbroken work history. A cleaner template does not touch it. Matching or addressing the stated criteria does.
+**What genuinely filters people out is the employer's own criteria**, not your font. Harvard Business School and Accenture [surveyed 2,275 executives](https://www.hbs.edu/managing-the-future-of-work/Documents/research/hiddenworkers09032021.pdf) and found 88% agreed qualified high-skills candidates were vetted out for not matching the exact criteria in the job description, rising to 94% for middle-skills roles. That is years of experience, a specific degree, an unbroken work history. A cleaner template does not touch it. Matching or addressing the stated criteria does.
 
 So: fix the formatting because it is cheap and it helps a human read you. Do not believe it is the reason you are not hearing back.
 

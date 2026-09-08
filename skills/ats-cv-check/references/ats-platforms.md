@@ -56,3 +56,39 @@ Bayt, GulfTalent, Naukrigulf and Qureos are job boards. **Talentera** is the ATS
 **Greenhouse also documents what happens on failure:** the recruiter enters the details manually and the CV remains attached. Worth quoting to anyone who believes a formatting slip is fatal.
 
 **Scanned PDFs are the real format risk.** Oracle's native path does not OCR. A CV that is an image of a CV parses to nothing.
+
+
+---
+
+## Sources
+
+**Employer platforms** were confirmed by following each employer's own application flow and reading the resulting hostname, CDN or page metadata, September 2026:
+[Emirates Group](https://tas-ekgcareers.taleo.net/careersection/2/jobview.ftl) ·
+[First Abu Dhabi Bank](https://www.bankfab.com/en-ae/about-fab/careers) ·
+[Emirates NBD](https://www.emiratesnbd.com/en/careers) ·
+[Etihad](https://careers.etihad.com/) ·
+[Al-Futtaim](https://www.afuturewithus.com/) ·
+[EY](https://careers.ey.com/) ·
+[Deloitte Middle East](https://middleeastjobs.deloitte.com/careersME/) ·
+[Chalhoub](https://careers.chalhoubgroup.com/locations/dubai) ·
+[ADNOC](https://jobs.adnoc.ae/us/en) ·
+[Majid Al Futtaim](https://careers.majidalfuttaim.com/) ·
+[DEWA](https://www.dewa.gov.ae/en/about-us/the-workplace/careers)
+
+Majid Al Futtaim's SuccessFactors HR core is separately evidenced by a [Rolling Arrays case study](https://rollingarrays.com/case-studies/majid-al-futtaim/), an SAP implementation partner. That confirms Employee Central, not the Recruiting module.
+
+**Boards and regional ATS**
+- [GulfTalent CV Search employer guide](https://www.gulftalent.com/employers/guides/cv-search). Boolean keyword search, nationality filter, no documented ranking
+- [GulfTalent CV upload](https://www.gulftalent.com/job_application_upload_cv?job_id=337992). The 1MB cap
+- [Bayt employer support](https://support.bayt.com/en/articles/6853478-do-a-cv-search). Silent on parsing
+- [Naukrigulf CV Quality Score](https://www.naukrigulf.com/resume-services/cv-quality-score)
+- [Talentera](https://www.talentera.com/en/). Client list is the vendor's own marketing
+
+**Vendor documentation**
+- [Oracle Taleo, attachments](https://docs.oracle.com/en/cloud/saas/taleo-enterprise/22d/otrcg/c-attachment.html)
+- [Oracle Recruiting 25C release note](https://docs.oracle.com/en/cloud/saas/readiness/hcm/25c/recr-25c/25C-recruiting-wn-f38002.htm). Parsing via an unnamed third-party partner
+- [Oracle Recruiting 25A, LinkedIn Apply Connect](https://docs.oracle.com/en/cloud/saas/readiness/hcm/25a/recr-25a/25A-recruiting-wn-f35389.htm)
+- [Workday HiredScore, candidate profiles](https://doc.workday.com/hiredscore/en-us/workday-hiredscore/recruiter-productivity-/concept--candidate-profiles.html)
+- [Greenhouse, supported formats](https://support.greenhouse.io/hc/en-us/articles/360052218132-Supported-formats-for-resumes-cover-letters-and-other-candidate-uploads) and [unsuccessful parse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse)
+- [SmartRecruiters candidate support](https://candidatesupport.freshdesk.com/support/solutions/articles/9000026808-what-formats-can-i-use-for-my-resume-cv-or-cover-letter-)
+- SAP SuccessFactors parsing limits could not be retrieved, the page is blocked to automated fetching. SAP KBA 2081576 is the authoritative source and needs a manual look.
