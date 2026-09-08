@@ -9,13 +9,13 @@ Most "AI for assistants" tooling is either a sales CRM with the labels changed, 
 ## Install
 
 ```bash
-npx skills add OlgaKurki/sortedea-skills
+npx skills add sortedea/skills
 ```
 
 Or a single skill:
 
 ```bash
-npx skills add https://github.com/OlgaKurki/sortedea-skills/tree/main/skills/executive-playbook
+npx skills add https://github.com/sortedea/skills/tree/main/skills/executive-playbook
 ```
 
 Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For claude.ai, zip the skill folder and upload it under Settings → Capabilities → Skills.
@@ -24,15 +24,32 @@ Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For cla
 
 ### `linkedin-ghostwriting`
 
-Drafting a principal's LinkedIn posts and comments without breaching LinkedIn's account rules or producing the low-substance content it now demotes.
+Drafting an executive's LinkedIn posts and comments, without breaching LinkedIn's account rules or producing the content it now demotes.
 
-Two facts shape it, and most executive-LinkedIn advice ignores both.
+Two facts shape it, and most advice on executive LinkedIn ignores both.
 
-**Ghostwriting is allowed. Account access is not.** Nothing in LinkedIn's rules requires anyone to compose their own posts — but signing in as your principal breaches the User Agreement outright, and a great many assistants do it. Company Pages have a proper admin model; personal profiles have no assistant seat at all. The skill gives three workflows that aren't a breach, including the official OAuth route compliant schedulers use, and the sentence to say when a principal offers you their password.
+**Ghostwriting is allowed. Account access is not.** Nothing in LinkedIn's rules requires anyone to compose their own posts, but signing in as your principal breaches the User Agreement outright (§2.2, §8.2), and plenty of assistants do it. Personal profiles have no delegation model the way Company Pages do. The skill gives three compliant workflows instead, including the one official route: OAuth with the `w_member_social` scope, which the executive authorises themselves and can revoke.
 
-**Substance is now a ranking factor, and LinkedIn says so in writing.** The platform names "AI slop" as a category it demotes, with a member-facing report button. So the ghostwriter's failure mode has inverted: it used to be sounding wrong, and now it's sounding fine and saying nothing. The skill treats the work as extraction rather than composition — the voice note, the meeting harvest, the disagreement — and tells you to spike the post when there's nothing there. If you can't find a specific claim, a number, a named example or a real opinion, don't write it.
+**Substance is now a ranking factor and LinkedIn says so in writing.** Since 2026 it names "AI slop" as a demoted category, with a reader-facing report button and a warning that surfaces in the author's own analytics. The ghostwriter's failure mode has inverted: it used to be sounding wrong, and now it is sounding fine and saying nothing. So the skill treats the job as extraction rather than composition, with three methods for getting a real point of view out of a principal, and an instruction to say there is nothing to post this week when there isn't.
 
-`references/platform-facts.md` separates what lasts (character limits, policy clauses) from what goes stale (ranking behaviour), marks each claim official or third-party, and dates them. It ends with a Folklore section for the advice repeated most confidently on the least evidence — optimal posting times, the golden hour, broetry, emoji penalties. The "links reduce reach" claim is filed as unproven in both directions rather than quietly picked.
+The reference file separates durable facts (limits, policy, the delegation route) from perishable ones (ranking behaviour), grades every claim by source, and debunks the folklore. The link-penalty belief is unproven in both directions; the real documented constraint is that a post carries a link preview or an image, not both.
+
+### `executive-voice`
+
+Builds a voice profile of a principal from their real writing, so anything drafted in their name sounds like them.
+
+Runs the opposite way round from the usual voice-capture interview. Your principal will not sit through 100 questions about their punctuation, and people describe their own writing badly. So the corpus is the source of truth and the assistant is the source of context: read 25 to 40 real pieces, measure them, then answer roughly 20 questions about what writing cannot reveal.
+
+Four things it insists on:
+
+- **Exclude anything that passed through someone else.** LinkedIn posts, press quotes, bylined articles, official statements. Comms teams and agencies write a great many of them, you usually cannot tell by reading, and one contaminated source teaches the wrong voice. The rule is exclusion, not caution.
+- **Count, don't sense.** You will believe they write short sentences and find the mean is 24 words. Absence is the strongest evidence of all: no exclamation mark in 40 emails is a harder rule than anything you could be told.
+- **Tell them you're doing it.** Building a model of how someone writes from their private correspondence is not a thing to do quietly, and they will improve it in five minutes anyway.
+- **Turn the finished profile into a skill.** A profile in a folder gets read once. Installed as a skill, it applies itself every time anyone drafts in that person's name. The guide covers what belongs in the instructions against the reference files, naming when you support more than one principal, packaging, and the corrections loop that keeps it current.
+
+Ships with an extraction checklist, the gap questions, a profile template with a "what I got wrong" log, and the save-as-a-skill guide.
+
+**A voice skill is never shareable.** It describes a named real person and is built from their correspondence. It does not go to a public repo, an organisation-wide skill directory, or the next assistant without the principal agreeing again. The repo's `.gitignore` blocks the obvious filenames, but that is a safety net, not permission.
 
 ### `sound-human`
 
@@ -56,6 +73,32 @@ Turns a transcript or rough notes into circulation-ready minutes: numbered decis
 Built around one principle — a draft that flags its own gaps saves more time than a draft that quietly fills them in. It will not invent an owner, guess a deadline, or attribute words to someone the source doesn't clearly show said them. Disagreements stay recorded as disagreements.
 
 It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
+
+### `ats-cv-check`
+
+Checks a CV against the applicant tracking systems that will actually parse it, then rebuilds it clean as a .docx.
+
+Built UAE-first, because the standard advice is aimed at the wrong target here. Almost every ATS guide tells you to test against Workday as the worst case. Reading the actual application flows of major UAE employers found no Workday at all: **Emirates runs Oracle Taleo, FAB and Emirates NBD run Oracle Fusion, Al-Futtaim and EY run SAP SuccessFactors, Etihad runs SmartRecruiters, Deloitte ME runs Avature.** The market is Oracle and SAP.
+
+That changes the advice. Both are HR suites where recruiting is bolted onto the HR core, which means a long structured application form in front of the CV, and recruiters filtering on the form fields rather than your CV text. A perfect CV behind a half-filled form still loses.
+
+It is also built to argue with the ATS advice industry:
+
+- **The "75% of CVs are auto-rejected" figure is a myth**, and the skill says where it came from: Preptel, a CV-optimisation vendor, in 2012. The company shut down in 2013 and never published a study.
+- **A parse failure does not reject you.** Greenhouse documents that the recruiter types your details in by hand and your CV stays attached.
+- **What actually filters people out is the employer's stated criteria**, per Harvard Business School and Accenture's survey of 2,275 executives. Years of experience, a specific degree, an unbroken history. A cleaner template does not touch it.
+
+The UAE content questions are handled with their sources and their disagreements intact: nationality and visa status are expected in practice while nationality is also protected under Federal Decree-Law 33 of 2021, and the photograph question has two credible regional sources saying opposite things, so the skill declines to state a rule.
+
+**It will not add anything you did not claim.** No invented skills, no stretched dates, no hidden keywords. Rewriting phrasing is help; adding content is writing a false document you have to defend in an interview.
+
+### `save-as-skill`
+
+Packages a finished playbook, voice profile or LinkedIn house rules into an installable skill and hands back a zip.
+
+The other three produce a document. This one turns it into something that runs. It reads the document, asks one question (what to call it), validates the name against the rules that break silently, strips out what must not travel, builds the folder and reference files, zips it, and tells you what it left out.
+
+That last part is the point of it being a skill rather than a checklist. The private annex is usually sitting in the same conversation as the playbook, so an unguarded packaging step would sweep it straight into a file that then gets uploaded and shared. This one is built to exclude it and to show you the exclusion list.
 
 ### `executive-playbook`
 
@@ -90,6 +133,10 @@ skills/executive-playbook/
     └── private-annex-template.md   # the annex structure
 ```
 </details>
+
+## The guide
+
+**[Save it as a skill](guide/Save-it-as-a-skill.pdf)** (PDF, 6 pages) is the short version for people who just want the thing working: run a skill, say "save as skill", upload the zip. It also carries the standalone prompt for anyone who has not installed `save-as-skill`, and the privacy rules that come with a file describing a named person.
 
 ## Roadmap
 

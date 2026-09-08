@@ -3,9 +3,15 @@ Thumbs.db
 node_modules/
 *.log
 
-# Never commit a filled-in playbook — these contain real people's details
+# Never commit anything filled in about a real person.
+# Playbooks, voice profiles and voice skills all describe a named individual.
 playbook.md
 playbook-private.md
 principals/
 *-playbook.md
+voice-profile*.md
+voice-*/
+samples.md
+log.md
 !skills/**/assets/*template*.md
+!skills/**/references/*.md
