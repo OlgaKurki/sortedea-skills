@@ -9,30 +9,18 @@ Most "AI for assistants" tooling is either a sales CRM with the labels changed, 
 ## Install
 
 ```bash
-npx skills add sortedea/skills
+npx skills add OlgaKurki/sortedea-skills
 ```
 
 Or a single skill:
 
 ```bash
-npx skills add https://github.com/sortedea/skills/tree/main/skills/executive-playbook
+npx skills add https://github.com/OlgaKurki/sortedea-skills/tree/main/skills/executive-playbook
 ```
 
 Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For claude.ai, zip the skill folder and upload it under Settings → Capabilities → Skills.
 
 ## Skills
-
-### `linkedin-ghostwriting`
-
-Drafting an executive's LinkedIn posts and comments, without breaching LinkedIn's account rules or producing the content it now demotes.
-
-Two facts shape it, and most advice on executive LinkedIn ignores both.
-
-**Ghostwriting is allowed. Account access is not.** Nothing in LinkedIn's rules requires anyone to compose their own posts, but signing in as your principal breaches the User Agreement outright (§2.2, §8.2), and plenty of assistants do it. Personal profiles have no delegation model the way Company Pages do. The skill gives three compliant workflows instead, including the one official route: OAuth with the `w_member_social` scope, which the executive authorises themselves and can revoke.
-
-**Substance is now a ranking factor and LinkedIn says so in writing.** Since 2026 it names "AI slop" as a demoted category, with a reader-facing report button and a warning that surfaces in the author's own analytics. The ghostwriter's failure mode has inverted: it used to be sounding wrong, and now it is sounding fine and saying nothing. So the skill treats the job as extraction rather than composition, with three methods for getting a real point of view out of a principal, and an instruction to say there is nothing to post this week when there isn't.
-
-The reference file separates durable facts (limits, policy, the delegation route) from perishable ones (ranking behaviour), grades every claim by source, and debunks the folklore. The link-penalty belief is unproven in both directions; the real documented constraint is that a post carries a link preview or an image, not both.
 
 ### `executive-voice`
 
@@ -50,55 +38,6 @@ Four things it insists on:
 Ships with an extraction checklist, the gap questions, a profile template with a "what I got wrong" log, and the save-as-a-skill guide.
 
 **A voice skill is never shareable.** It describes a named real person and is built from their correspondence. It does not go to a public repo, an organisation-wide skill directory, or the next assistant without the principal agreeing again. The repo's `.gitignore` blocks the obvious filenames, but that is a safety net, not permission.
-
-### `sound-human`
-
-Rewrites assistant and executive writing so it stops reading as AI, without stripping out the formality a document actually needs.
-
-Most de-AI advice is written for blog posts: use contractions, cut the formality, write punchy. Applied to a board minute or a decline to an investor, that produces something worse than the AI draft. So this one starts from a register map instead of a voice. Formality is not the tell. Formula is.
-
-It covers the tells that show up in support writing specifically, which are not the ones in marketing AI-speak: "I hope this email finds you well", stacked hedges, reflexive apology for chasing, "at your earliest convenience", manufactured consensus in minutes. Plus em dashes, digits, and sentence rhythm.
-
-Two rules it holds harder than the style guide:
-
-- **Nothing factual moves during a style pass.** No number, name, date, deadline, decision or commitment changes, and nothing is added that was not in the source. Making a draft warmer must not make it promise more.
-- **Warmth is not an AI tell.** The common failure is stripping every courtesy and producing something curt, which for an assistant is a professional risk. Cut formulaic warmth ("hope you're well"), keep specific warmth ("hope Lisbon went well").
-
-Ships with 6 worked before/afters: declining a meeting, chasing a signature, an internal announcement, a briefing note, minutes, and a travel confirmation. The minutes example shows the over-correction failure as well as the original.
-
-### `meeting-minutes`
-
-Turns a transcript or rough notes into circulation-ready minutes: numbered decisions, a four-column action table with named owners, and an honest list of what it could not work out.
-
-Built around one principle — a draft that flags its own gaps saves more time than a draft that quietly fills them in. It will not invent an owner, guess a deadline, or attribute words to someone the source doesn't clearly show said them. Disagreements stay recorded as disagreements.
-
-It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
-
-### `ats-cv-check`
-
-Checks a CV against the applicant tracking systems that will actually parse it, then rebuilds it clean as a .docx.
-
-Built UAE-first, because the standard advice is aimed at the wrong target here. Almost every ATS guide tells you to test against Workday as the worst case. Reading the actual application flows of major UAE employers found no Workday at all: **Emirates runs Oracle Taleo, FAB and Emirates NBD run Oracle Fusion, Al-Futtaim and EY run SAP SuccessFactors, Etihad runs SmartRecruiters, Deloitte ME runs Avature.** The market is Oracle and SAP.
-
-That changes the advice. Both are HR suites where recruiting is bolted onto the HR core, which means a long structured application form in front of the CV, and recruiters filtering on the form fields rather than your CV text. A perfect CV behind a half-filled form still loses.
-
-It is also built to argue with the ATS advice industry:
-
-- **The "75% of CVs are auto-rejected" figure is a myth**, and the skill says where it came from: Preptel, a CV-optimisation vendor, in 2012. The company shut down in 2013 and never published a study.
-- **A parse failure does not reject you.** Greenhouse documents that the recruiter types your details in by hand and your CV stays attached.
-- **What actually filters people out is the employer's stated criteria**, per Harvard Business School and Accenture's survey of 2,275 executives. Years of experience, a specific degree, an unbroken history. A cleaner template does not touch it.
-
-The UAE content questions are handled with their sources and their disagreements intact: nationality and visa status are expected in practice while nationality is also protected under Federal Decree-Law 33 of 2021, and the photograph question has two credible regional sources saying opposite things, so the skill declines to state a rule.
-
-**It will not add anything you did not claim.** No invented skills, no stretched dates, no hidden keywords. Rewriting phrasing is help; adding content is writing a false document you have to defend in an interview.
-
-### `save-as-skill`
-
-Packages a finished playbook, voice profile or LinkedIn house rules into an installable skill and hands back a zip.
-
-The other three produce a document. This one turns it into something that runs. It reads the document, asks one question (what to call it), validates the name against the rules that break silently, strips out what must not travel, builds the folder and reference files, zips it, and tells you what it left out.
-
-That last part is the point of it being a skill rather than a checklist. The private annex is usually sitting in the same conversation as the playbook, so an unguarded packaging step would sweep it straight into a file that then gets uploaded and shared. This one is built to exclude it and to show you the exclusion list.
 
 ### `executive-playbook`
 
@@ -133,6 +72,67 @@ skills/executive-playbook/
     └── private-annex-template.md   # the annex structure
 ```
 </details>
+
+### `linkedin-ghostwriting`
+
+Drafting an executive's LinkedIn posts and comments, without breaching LinkedIn's account rules or producing the content it now demotes.
+
+Two facts shape it, and most advice on executive LinkedIn ignores both.
+
+**Ghostwriting is allowed. Account access is not.** Nothing in LinkedIn's rules requires anyone to compose their own posts, but signing in as your principal breaches the User Agreement outright (§2.2, §8.2), and plenty of assistants do it. Personal profiles have no delegation model the way Company Pages do. The skill gives three compliant workflows instead, including the one official route: OAuth with the `w_member_social` scope, which the executive authorises themselves and can revoke.
+
+**Substance is now a ranking factor and LinkedIn says so in writing.** Since 2026 it names "AI slop" as a demoted category, with a reader-facing report button and a warning that surfaces in the author's own analytics. The ghostwriter's failure mode has inverted: it used to be sounding wrong, and now it is sounding fine and saying nothing. So the skill treats the job as extraction rather than composition, with three methods for getting a real point of view out of a principal, and an instruction to say there is nothing to post this week when there isn't.
+
+The reference file separates durable facts (limits, policy, the delegation route) from perishable ones (ranking behaviour), grades every claim by source, and debunks the folklore. The link-penalty belief is unproven in both directions; the real documented constraint is that a post carries a link preview or an image, not both.
+
+### `meeting-minutes`
+
+Turns a transcript or rough notes into circulation-ready minutes: numbered decisions, a four-column action table with named owners, and an honest list of what it could not work out.
+
+Built around one principle — a draft that flags its own gaps saves more time than a draft that quietly fills them in. It will not invent an owner, guess a deadline, or attribute words to someone the source doesn't clearly show said them. Disagreements stay recorded as disagreements.
+
+It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
+
+### `sound-human`
+
+Rewrites assistant and executive writing so it stops reading as AI, without stripping out the formality a document actually needs.
+
+Most de-AI advice is written for blog posts: use contractions, cut the formality, write punchy. Applied to a board minute or a decline to an investor, that produces something worse than the AI draft. So this one starts from a register map instead of a voice. Formality is not the tell. Formula is.
+
+It covers the tells that show up in support writing specifically, which are not the ones in marketing AI-speak: "I hope this email finds you well", stacked hedges, reflexive apology for chasing, "at your earliest convenience", manufactured consensus in minutes. Plus em dashes, digits, and sentence rhythm.
+
+Two rules it holds harder than the style guide:
+
+- **Nothing factual moves during a style pass.** No number, name, date, deadline, decision or commitment changes, and nothing is added that was not in the source. Making a draft warmer must not make it promise more.
+- **Warmth is not an AI tell.** The common failure is stripping every courtesy and producing something curt, which for an assistant is a professional risk. Cut formulaic warmth ("hope you're well"), keep specific warmth ("hope Lisbon went well").
+
+Ships with 6 worked before/afters: declining a meeting, chasing a signature, an internal announcement, a briefing note, minutes, and a travel confirmation. The minutes example shows the over-correction failure as well as the original.
+
+### `ats-cv-check`
+
+Checks a CV against the applicant tracking systems that will actually parse it, then rebuilds it clean as a .docx.
+
+Built UAE-first, because the standard advice is aimed at the wrong target here. Almost every ATS guide tells you to test against Workday as the worst case. Reading the actual application flows of major UAE employers found no Workday at all: **Emirates runs Oracle Taleo, FAB and Emirates NBD run Oracle Fusion, Al-Futtaim and EY run SAP SuccessFactors, Etihad runs SmartRecruiters, Deloitte ME runs Avature.** The market is Oracle and SAP.
+
+That changes the advice. Both are HR suites where recruiting is bolted onto the HR core, which means a long structured application form in front of the CV, and recruiters filtering on the form fields rather than your CV text. A perfect CV behind a half-filled form still loses.
+
+It is also built to argue with the ATS advice industry:
+
+- **The "75% of CVs are auto-rejected" figure is a myth**, and the skill says where it came from: Preptel, a CV-optimisation vendor, in 2012. The company shut down in 2013 and never published a study.
+- **A parse failure does not reject you.** Greenhouse documents that the recruiter types your details in by hand and your CV stays attached.
+- **What actually filters people out is the employer's stated criteria**, per Harvard Business School and Accenture's survey of 2,275 executives. Years of experience, a specific degree, an unbroken history. A cleaner template does not touch it.
+
+The UAE content questions are handled with their sources and their disagreements intact: nationality and visa status are expected in practice while nationality is also protected under Federal Decree-Law 33 of 2021, and the photograph question has two credible regional sources saying opposite things, so the skill declines to state a rule.
+
+**It will not add anything you did not claim.** No invented skills, no stretched dates, no hidden keywords. Rewriting phrasing is help; adding content is writing a false document you have to defend in an interview.
+
+### `save-as-skill`
+
+Packages a finished playbook, voice profile or LinkedIn house rules into an installable skill and hands back a zip.
+
+The other three produce a document. This one turns it into something that runs. It reads the document, asks one question (what to call it), validates the name against the rules that break silently, strips out what must not travel, builds the folder and reference files, zips it, and tells you what it left out.
+
+That last part is the point of it being a skill rather than a checklist. The private annex is usually sitting in the same conversation as the playbook, so an unguarded packaging step would sweep it straight into a file that then gets uploaded and shared. This one is built to exclude it and to show you the exclusion list.
 
 ## The guide
 
