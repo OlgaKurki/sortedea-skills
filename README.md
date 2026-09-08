@@ -138,16 +138,6 @@ That last part is the point of it being a skill rather than a checklist. The pri
 
 **[Save it as a skill](guide/Save-it-as-a-skill.pdf)** (PDF, 6 pages) is the short version for people who just want the thing working: run a skill, say "save as skill", upload the zip. It also carries the standalone prompt for anyone who has not installed `save-as-skill`, and the privacy rules that come with a file describing a named person.
 
-## Roadmap
-
-Gaps found in a survey of the existing skills landscape — nothing credible covers these yet:
-
-- **`board-pack`** — the pack as an artefact: agenda, consent items, pre-reads, version control, distribution
-- **`trip-file`** — corporate travel, not holiday planning. Confirmation numbers, visas, disruption handling
-- **`relationship-map`** — a principal's network, tended rather than pipelined
-- **`slot-politics`** — diary triage as judgement, not free/busy
-- **`new-joiner-runway`** — the EA's real onboarding checklist
-
 ## A note on privacy
 
 These skills handle information about real people who did not choose to be in an AI system. Every skill here is built on that assumption. If you find somewhere one of them encourages recording something it shouldn't, please open an issue — that's a bug, and a serious one.
