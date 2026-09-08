@@ -83,7 +83,9 @@ Keep logging edits after the profile is done. Corrections are the highest qualit
 
 A profile sitting in a folder gets read once. A profile installed as a skill gets used every time anyone drafts in that person's name, which is the point of building it.
 
-`references/save-as-a-skill.md` covers turning the finished profile into an installable skill: what to put in the instructions against what to leave in the reference files, the naming convention when you support more than one principal, how to package and install it, and how to keep it current.
+The **`save-as-skill`** skill in this repository does this end to end — it asks for the name, strips what should not be packaged, builds the folder and hands back a zip. Use it if you have it installed.
+
+`references/save-as-a-skill.md` covers the same ground by hand, and goes further on the parts specific to a voice profile: what to put in the instructions against what to leave in the reference files, the naming convention when you support more than one principal, how to package and install it, and how to keep it current.
 
 **Read the privacy section of that file before you package anything.** A voice skill is a file about a named real person, built from their correspondence. It is not shareable material, and it must never reach a public repository or an organisation-wide skill directory.
 

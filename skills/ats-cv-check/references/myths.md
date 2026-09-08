@@ -20,7 +20,7 @@ Where genuine automatic rejection does happen is **knockout questions**: visa st
 
 ## "It's the formatting that's stopping you"
 
-The largest real study points elsewhere. [Hidden Workers: Untapped Talent](https://www.hbs.edu/managing-the-future-of-work/Documents/research/hiddenworkers09032021.pdf), Harvard Business School and Accenture, 2021.
+The largest real study points elsewhere. [Hidden Workers: Untapped Talent](https://www.hbs.edu/managing-the-future-of-work/research/hidden-workers-untapped-talent), Harvard Business School and Accenture, 2021.
 
 Verbatim from the report: *"We surveyed 2,275 executives, reaching out to a minimum of 750 executives in each of these three countries: the United States, the United Kingdom, and Germany"*, fielded January to February 2020. *"More than 90% of employers in our survey use their RMS to initially filter or rank potential middle-skills (94%) and high-skills (92%) candidates."* And: *"A large majority (88%) of employers agree, telling us that qualified high-skills candidates are vetted out of the process because they do not match the exact criteria established by the job description. That number rose to 94% in the case of middle-skills workers."*
 
@@ -65,7 +65,7 @@ When there is no evidence, say there is no evidence. "Nobody has published data 
 
 ## Every source on this page
 
-- [Hidden Workers: Untapped Talent](https://www.hbs.edu/managing-the-future-of-work/Documents/research/hiddenworkers09032021.pdf). Harvard Business School / Accenture, 2021. Primary source, PDF
+- [Hidden Workers: Untapped Talent](https://www.hbs.edu/managing-the-future-of-work/research/hidden-workers-untapped-talent). Harvard Business School / Accenture, 2021. Primary source, PDF
 - [JobCannon on the Preptel origin of the 75% figure](https://jobcannon.io/research/stats/ats-myth-preptel)
 - [Enhancv, does the ATS reject your resume](https://enhancv.com/blog/does-ats-reject-resumes/). The n=25 recruiter survey
 - [ITBrief coverage of the same study](https://itbrief.co.uk/story/study-reveals-ats-rarely-auto-rejects-cvs-debunks-75-myth)

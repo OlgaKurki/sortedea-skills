@@ -29,7 +29,7 @@ Run these against the extracted text, not the visual layout. Everything here is 
 ## Content and match
 
 - **Does the CV use the words in the job advert?** Not stuffed, used. Where the advert says "stakeholder management" and the CV says "dealing with senior people", the words do not meet. This matters most on [GulfTalent](https://www.gulftalent.com/employers/guides/cv-search), where search is literal Boolean with no semantic fallback.
-- **Are the employer's stated criteria addressed?** Years of experience, the specific qualification, the licence. This is what [the Harvard research](https://www.hbs.edu/managing-the-future-of-work/Documents/research/hiddenworkers09032021.pdf) found people are actually filtered on.
+- **Are the employer's stated criteria addressed?** Years of experience, the specific qualification, the licence. This is what [the Harvard research](https://www.hbs.edu/managing-the-future-of-work/research/hidden-workers-untapped-talent) found people are actually filtered on.
 - **Are gaps visible and unexplained?** They are computed automatically in some systems. Better to account for one in a line than to leave it as a hole.
 
 ## The application form
