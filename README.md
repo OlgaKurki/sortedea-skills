@@ -74,6 +74,24 @@ Built around one principle — a draft that flags its own gaps saves more time t
 
 It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
 
+### `ats-cv-check`
+
+Checks a CV against the applicant tracking systems that will actually parse it, then rebuilds it clean as a .docx.
+
+Built UAE-first, because the standard advice is aimed at the wrong target here. Almost every ATS guide tells you to test against Workday as the worst case. Reading the actual application flows of major UAE employers found no Workday at all: **Emirates runs Oracle Taleo, FAB and Emirates NBD run Oracle Fusion, Al-Futtaim and EY run SAP SuccessFactors, Etihad runs SmartRecruiters, Deloitte ME runs Avature.** The market is Oracle and SAP.
+
+That changes the advice. Both are HR suites where recruiting is bolted onto the HR core, which means a long structured application form in front of the CV, and recruiters filtering on the form fields rather than your CV text. A perfect CV behind a half-filled form still loses.
+
+It is also built to argue with the ATS advice industry:
+
+- **The "75% of CVs are auto-rejected" figure is a myth**, and the skill says where it came from: Preptel, a CV-optimisation vendor, in 2012. The company shut down in 2013 and never published a study.
+- **A parse failure does not reject you.** Greenhouse documents that the recruiter types your details in by hand and your CV stays attached.
+- **What actually filters people out is the employer's stated criteria**, per Harvard Business School and Accenture's survey of 2,275 executives. Years of experience, a specific degree, an unbroken history. A cleaner template does not touch it.
+
+The UAE content questions are handled with their sources and their disagreements intact: nationality and visa status are expected in practice while nationality is also protected under Federal Decree-Law 33 of 2021, and the photograph question has two credible regional sources saying opposite things, so the skill declines to state a rule.
+
+**It will not add anything you did not claim.** No invented skills, no stretched dates, no hidden keywords. Rewriting phrasing is help; adding content is writing a false document you have to defend in an interview.
+
 ### `save-as-skill`
 
 Packages a finished playbook, voice profile or LinkedIn house rules into an installable skill and hands back a zip.
