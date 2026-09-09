@@ -18,7 +18,7 @@ Or a single skill:
 npx skills add https://github.com/SortedEA/skills/tree/main/skills/executive-playbook
 ```
 
-Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For claude.ai, zip the skill folder and upload it under Settings → Capabilities → Skills.
+Works with Claude Code, Cursor, and anything else that reads `SKILL.md`. For claude.ai, zip the skill folder and upload it under Settings → Customize → Skills → Add → Upload skill.
 
 ## Skills
 
