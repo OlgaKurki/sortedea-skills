@@ -93,6 +93,14 @@ Built around one principle — a draft that flags its own gaps saves more time t
 
 It also flags anything that may not suit the full circulation list — performance discussions, compensation figures, privileged legal advice, unannounced commercial matters — under **Flagged for circulation review**, so the minute taker decides rather than the tool.
 
+### `my-voice`
+
+The companion to `executive-voice`, pointed at yourself. Captures how you actually write, from your own sent mail and messages, so anything drafted for you sounds like you.
+
+The method looks the same as the executive one and the traps are completely different. Building a profile of someone else, the hard part is getting evidence. Building one of yourself, the evidence is easy and **you are the unreliable part** — you will describe the writer you intend to be. Almost everyone says they write short and direct; the corpus usually disagrees.
+
+One exclusion catches assistants specifically: if you draft for a principal, your sent folder is full of writing in *their* voice. Feed that in and you capture them, not you.
+
 ### `sound-human`
 
 Rewrites assistant and executive writing so it stops reading as AI, without stripping out the formality a document actually needs.
